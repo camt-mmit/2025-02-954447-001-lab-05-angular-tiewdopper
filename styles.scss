@@ -1,0 +1,28 @@
+:root {
+font-family: sans-serif;
+font-size: 16px;
+
+--app-surface-color: light-dark( #ffffff, #121212);
+--app-surface-container-color:light-dark(#808080,#404040);
+--app-on-surface-color: light-dark( #333333, #ffffff);
+
+--app-brand-primary-color: #0000ff;
+
+--app-primaary-color:light-dark((--app-brand-primary-color), color-mix(in srgb, var(--app-brand-primary-color), #ffffff 50%));
+
+color-scheme: light dark;
+color: var(--app-on-surface-color);
+background-color: var(--app-surface-color);
+
+&[data-theme="light"]{
+  color-scheme: light;
+}
+
+&[data-theme="dark"]{
+  color-scheme: dark;
+}
+
+}
+
+
+
